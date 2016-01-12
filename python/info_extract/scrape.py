@@ -27,7 +27,7 @@ def parse_table(table, **kwds):
     return [parse_row(row, **kwds) for row in table.find_all('tr')]
 
 def html_table_to_frame(table, ixs_row_labels=(), ixs_col_labels=(), **kwds):
-    """
+    """Convert a BeautifulSoup table node to a pandas DataFrame
 
     :param table:   bs4.Tag instance for tag 'table'
     :param ixs_row_labels:   column indices that contain the row labels (as a tuple)
