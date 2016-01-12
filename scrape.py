@@ -1,11 +1,9 @@
-
+""" Utilities for scraping tables from HTML documents
+"""
 
 import re
-# from functools import wraps
-# from collections import namedtuple
 
 import pandas as pd
-# from bs4 import BeautifulSoup
 
 
 cell_regex = re.compile(r't[hd]')
